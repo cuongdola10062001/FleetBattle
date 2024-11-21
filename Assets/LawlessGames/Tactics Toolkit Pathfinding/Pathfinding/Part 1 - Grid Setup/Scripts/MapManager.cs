@@ -1,4 +1,4 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Tilemaps;
@@ -56,6 +56,8 @@ namespace finished1
                     }
                 }
             }
+
+            Debug.Log(overlayContainer.transform.childCount);
         }
 
         // Update is called once per frame

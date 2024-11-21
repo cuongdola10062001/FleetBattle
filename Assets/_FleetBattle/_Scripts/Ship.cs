@@ -1,16 +1,16 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Ship
+public class Ship : MonoBehaviour
 {
-    public Vector2Int startIndex;      
-    public List<Vector2Int> shape;     
-    public bool isPlaced;              
+    public ShipSO shipSO;
+    public bool isPlaced;
 
-    public Ship(Vector2Int start, List<Vector2Int> shapeOffsets)
-    {
-        startIndex = start;
-        shape = new List<Vector2Int>(shapeOffsets);
-        isPlaced = false;
-    }
+}
+
+[CreateAssetMenu(fileName = "Data", menuName = "ScriptableObjects/Ship", order = 1)]
+public class ShipSO : ScriptableObject
+{
+    public Vector2Int startIndex;
+    public List<Vector2Int> shape;
 }
