@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "com.bilalemregrkn.mygrid": "https://github.com/bilalemregrkn/MyGrid.git",
     "com.unity.2d.tilemap": "1.0.0",
     "com.unity.cinemachine": "2.10.1",
     "com.unity.collab-proxy": "2.4.4",
